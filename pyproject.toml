@@ -45,10 +45,6 @@ urls.homepage = "https://github.com/krishnakumarg1984/learning-python-2896241"
 
 [tool.mypy]
 explicit_package_bases = true
-plugins = [
-    "numpy.typing.mypy_plugin",
-    "pydantic.mypy",
-]
 
 [tool.pytest.ini_options]
 addopts = "--color=yes -v"
@@ -130,3 +126,14 @@ spaces_indent_inline_array = 4
 trailing_comma_inline_array = true
 overrides."project.classifiers".inline_arrays = false
 overrides."tool.coverage.paths.source".inline_arrays = false
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = """
+    attribute-defined-outside-init,
+    invalid-name,
+    missing-class-docstring,
+    missing-function-docstring,
+    missing-module-docstring,
+    too-few-public-methods,
+"""
+

@@ -8,20 +8,25 @@
 def func1():
     print("I am a function")
 
+
 # function that takes arguments
 def func2(arg1, arg2):
     print(arg1, " ", arg2)
 
+
 # function that returns a value
 def cube(x):
-    return x*x*x
+    return x * x * x
+
 
 # function with default value for an argument
 def power(num, x=1):
     result = 1
-    for i in range(x):
+    # for i in range(x):
+    for _ in range(x):
         result = result * num
     return result
+
 
 # function with variable number of arguments
 def multi_add(*args):

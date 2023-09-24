@@ -1,4 +1,4 @@
-# 
+#
 # Example file for variables
 # LinkedIn Learning Python course by Joe Marini
 #
@@ -11,7 +11,7 @@ mystr = "This is a string"
 mybool = True
 mylist = [0, 1, "two", 3.2, False]
 mytuple = (0, 1, 2)
-mydict = {"one" : 1, "two" : 2}
+mydict = {"one": 1, "two": 2}
 
 print(myint)
 print(myfloat)
@@ -34,4 +34,3 @@ print(mydict)
 # ERROR: variables of different types cannot be combined
 
 # Global vs. local variables in functions
-

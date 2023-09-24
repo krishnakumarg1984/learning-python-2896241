@@ -1,18 +1,6 @@
 #!/usr/bin/env bash
 
-ln -sf "$(git rev-parse --show-toplevel)/python_setup_dir/pytest.ini" . 2>/dev/null
-ln -sf "$(git rev-parse --show-toplevel)/python_setup_dir/rpncalc" . 2>/dev/null
-
-python_setup_dir=$(git rev-parse --show-toplevel)/python_setup_dir
-python_setup_files=$(find "$python_setup_dir" -maxdepth 1 -type f -name "*")
-
-for python_setup_file in $python_setup_files; do
-  ln -sf "$python_setup_file" . 2>/dev/null
-done
-
-vscode_dir=$(find "$python_setup_dir" -maxdepth 1 -type d -name ".vscode")
-if [ -d "$vscode_dir" ]; then
-  ln -sf "$vscode_dir" . 2>/dev/null
-fi
-
 touch ".root" 2>/dev/null
+ln -sf "../.vscode" . 2>/dev/null
+ln -sf "../.nvim.lua" . 2>/dev/null
+ln -sf "../pyproject.toml" . 2>/dev/null

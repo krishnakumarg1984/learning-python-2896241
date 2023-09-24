@@ -12,7 +12,7 @@ null_ls.register({
   -- diagnostics.pycodestyle,
   diagnostics.pylint,
   diagnostics.ruff, -- pycodestyle, pydocstyle, pyflakes, mccabe, eradicate etc
-  diagnostics.semgrep.with({ extra_args = { "--config=auto" } }),
+  -- diagnostics.semgrep.with({ extra_args = { "--config=auto" } }),
   diagnostics.shellcheck.with({ diagnostics_format = "[#{c}] #{m} (#{s})" }),
   formatting.black,
   formatting.clang_format,

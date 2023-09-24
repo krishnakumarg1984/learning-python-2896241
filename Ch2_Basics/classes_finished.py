@@ -3,7 +3,8 @@
 # LinkedIn Learning Python course by Joe Marini
 #
 
-class Vehicle():
+
+class Vehicle:
     def __init__(self, bodystyle):
         self.bodystyle = bodystyle
 
@@ -21,22 +22,22 @@ class Car(Vehicle):
 
     def drive(self, speed):
         super().drive(speed)
-        print("Driving my", self.engine, "Car at ", self.speed)
+        print("Driving my", self.engine, "Car at", self.speed)
 
 
 class Motorcycle(Vehicle):
     def __init__(self, enginetype, hassidecar):
         super().__init__("Motorcycle")
-        if (hassidecar):
-            self.wheels = 2
-        else:
+        if hassidecar:
             self.wheels = 3
+        else:
+            self.wheels = 2
         self.doors = 0
         self.engine = enginetype
 
     def drive(self, speed):
         super().drive(speed)
-        print("Driving my", self.engine, "motorcylce at ", self.speed)
+        print("Driving my", self.engine, "motorcycle at ", self.speed)
 
 
 car1 = Car("gas")

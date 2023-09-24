@@ -8,7 +8,7 @@
 # TODO: the math module contains lots of pre-built functions
 
 
-# TODO: in addition to functions, some modules contain useful constants 
+# TODO: in addition to functions, some modules contain useful constants
 
 
 # TODO: try some of the math functions for yourself here:
